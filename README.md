@@ -20,7 +20,10 @@ Este proyecto es un clasico juego de Piedra, papel o tijeras. Y que ademas tiene
 
 ## Capturas de pantalla
 
-![Desktop 🖥️](https://user-images.githubusercontent.com/86677547/223475437-4d6f92a5-94d5-4262-9d7b-e7ac878bb2fe.png)
+🖥️ Desktop <br>
+![Desktop 🖥️](https://user-images.githubusercontent.com/86677547/223475437-4d6f92a5-94d5-4262-9d7b-e7ac878bb2fe.png) 
+<br>
+📲 Mobile <br>
 ![Mobile 📱](https://user-images.githubusercontent.com/86677547/223475538-ed4f17eb-d2ee-4544-8aea-ed8a797cfeec.png)
 
 ## Instalación y uso
