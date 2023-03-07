@@ -1,0 +1,74 @@
+.competing__container {
+  display: grid;
+  grid-template-areas:
+    "left right"
+    "bottom bottom";
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+  color: var(--color-white);
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-areas: "left bottom right";
+  }
+
+  .user {
+    grid-area: left;
+    width: 100%;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .result {
+    grid-area: bottom;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .computer {
+    grid-area: right;
+    width: 100%;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.thinking {
+  width: calc(7em + 4vw);
+  height: calc(7em + 4vw);
+  background-color: #000;
+  opacity: 0.1;
+  border-radius: 50%;
+  animation: pulsate-bck 0.8s ease-in-out infinite both;
+
+  @keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(4, 4, 4, 0.3);
+}
+
+.rules__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+
+  @media screen and (min-width: 600px) {
+    max-width: 500px;
+    max-height: 600px;
+    margin: auto;
+    border-radius: var(--radius);
+  }
+
+  button {
+    background-image: url("/images/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

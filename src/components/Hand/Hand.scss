@@ -1,0 +1,45 @@
+.hand__container {
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 40%;
+  box-shadow: inset 2px 2px 10px 2px rgb(166, 166, 166);
+  width: calc(4em + 4vw);
+  height: calc(4em + 4vw);
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (min-width: 1980px) {
+    width: 9em;
+    height: 9em;
+  }
+}
+
+.pin__winner::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  width: calc(4em + 4vw);
+  height: calc(4em + 4vw);
+  border-radius: 50%;
+  box-shadow: 0 0 0 40px #2d3c5b, 0 0 0 60px #273856, 0 0 0 80px #223555;
+  z-index: -1;
+
+  animation: pulsate-bck 1s ease-in-out infinite both;
+
+  @keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
