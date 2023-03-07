@@ -1,4 +1,5 @@
 import './sass/main.scss'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
 import { createHashRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Initial from './containers/Initial/Initial';
@@ -24,7 +25,7 @@ const router = createHashRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  // <React.StrictMode>
-  <RouterProvider router={router} />
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
 )

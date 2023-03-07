@@ -7,17 +7,17 @@ import Competing from '../../components/Competing';
 import Rules from '../Rules';
 
 const normalOptions = [
-  { name: "rock", color: "#DF3C5A", image: '/images/icon-rock.svg' },
-  { name: "paper", color: "#5571F2", image: '/images/icon-paper.svg' },
-  { name: "scissors", color: "#ECA61A", image: '/images/icon-scissors.svg' },
+  { name: "rock", color: "#DF3C5A", image: './images/icon-rock.svg' },
+  { name: "paper", color: "#5571F2", image: './images/icon-paper.svg' },
+  { name: "scissors", color: "#ECA61A", image: './images/icon-scissors.svg' },
 ];
 
 const plusOptions = [
-  { name: "rock", color: "#DF3C5A", image: '/images/icon-rock.svg' },
-  { name: "paper", color: "#5571F2", image: '/images/icon-paper.svg' },
-  { name: "scissors", color: "#ECA61A", image: '/images/icon-scissors.svg' },
-  { name: "lizard", color: "#8559E1", image: '/images/icon-lizard.svg' },
-  { name: "spock", color: "#4FBCD1", image: '/images/icon-spock.svg' },
+  { name: "rock", color: "#DF3C5A", image: './images/icon-rock.svg' },
+  { name: "paper", color: "#5571F2", image: './images/icon-paper.svg' },
+  { name: "scissors", color: "#ECA61A", image: './images/icon-scissors.svg' },
+  { name: "lizard", color: "#8559E1", image: './images/icon-lizard.svg' },
+  { name: "spock", color: "#4FBCD1", image: './images/icon-spock.svg' },
 ];
 
 interface IOption {

@@ -11,8 +11,8 @@ export default function Header({ score }: Iprops) {
     <div className='header__container'>
       {
         mode == 'normal'
-          ? <img src="/images/logo.svg" alt={`${mode} game`} />
-          : <img src="/images/logo-bonus.svg" alt={`${mode} game`} />
+          ? <img src="./images/logo.svg" alt={`${mode} game`} />
+          : <img src="./images/logo-bonus.svg" alt={`${mode} game`} />
       }
       <div className='score'>
         <span>SCORE</span>

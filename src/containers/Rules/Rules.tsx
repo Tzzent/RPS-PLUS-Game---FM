@@ -34,7 +34,7 @@ const Rules = ({ isRulesOpen, setIsRulesOpen }: Iprops) => {
         isRulesOpen && createPortal(
           <div className="rules__container">
             <h1>RULES</h1>
-            <img src={mode == 'normal' ? '/images/image-rules.svg' : '/images/image-rules-bonus.svg'} alt="" />
+            <img src={mode == 'normal' ? './images/image-rules.svg' : './images/image-rules-bonus.svg'} alt="" />
             <button onClick={() => setIsRulesOpen(false)}></button>
           </div>,
           document.body
